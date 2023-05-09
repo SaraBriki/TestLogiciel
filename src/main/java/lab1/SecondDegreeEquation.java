@@ -1,4 +1,4 @@
-package test.lab1;
+package lab1;
 
 public class SecondDegreeEquation {
     private double a, b, c;
