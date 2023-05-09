@@ -23,10 +23,15 @@ public class SommeArgent {
         } else return new SommeArgent(getQuantite() + m.getQuantite(), getUnite());
     }
 
+    @Override
     public boolean equals(Object anObject) {
         if (anObject instanceof SommeArgent) {
             return (((SommeArgent) anObject).quantite == this.quantite && ((SommeArgent) anObject).unite == this.unite);
         }
         return false;
+    }
+
+    public String toString(){
+        return Integer.toString(this.quantite) + this.unite;
     }
 }

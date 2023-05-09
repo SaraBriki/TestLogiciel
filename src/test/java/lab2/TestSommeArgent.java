@@ -42,4 +42,9 @@ public class TestSommeArgent {
         Assert.assertTrue(!m12CHF.equals(m14CHF));
         Assert.assertTrue(!m14USD.equals(m14CHF));
     }
+
+    @Test(expected = UniteDistincteException.class)
+    public void TestingDistinctCurrencies() throws UniteDistincteException {
+        m14CHF.add(m14USD);
+    }
 }
